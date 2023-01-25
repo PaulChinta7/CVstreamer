@@ -1,0 +1,2 @@
+# CVstreamer
+OpenCV powered streamer
