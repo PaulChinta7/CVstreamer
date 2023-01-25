@@ -1,2 +1,2 @@
 # CVstreamer
-OpenCV powered streamer
+OpenCV powered motion capture program.
