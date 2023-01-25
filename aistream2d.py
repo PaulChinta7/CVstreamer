@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(0)
 
 
 pygame.init()
-screen=pygame.display.set_mode((1280,720))
+screen=pygame.display.set_mode((720,480))
 pygame.display.set_caption("Ai Streamer")
 bg=pygame.image.load("bg.png")
 eo=pygame.image.load('eyeopen.png')
@@ -18,11 +18,7 @@ cm=pygame.image.load('mouthclose.png')
 
 
 detector = dlib.get_frontal_face_detector()
-
-
-
 predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
-
 
 def background():
     screen.blit(bg,(0,0))
@@ -37,9 +33,6 @@ def openmouth():
     screen.blit(om,(520,380))
 
 running=True
-
-
-
 
 def midpoint(p1 ,p2):
     return int((p1.x + p2.x)/2), int((p1.y + p2.y)/2)
